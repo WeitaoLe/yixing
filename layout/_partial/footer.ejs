@@ -1,0 +1,9 @@
+	<div class="footer">
+		  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+		<div class="flink">友情链接：<a href="">书香网</a> | <a href="">书香网</a> | <a href="">书香网</a> | <a href="">书香网</a> | <a href="">书香网</a></div>
+		<div class="copyright">
+			 &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> <span><%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a></span>
+		</div>
+	</div>

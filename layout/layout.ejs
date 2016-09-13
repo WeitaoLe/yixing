@@ -1,0 +1,13 @@
+<%- partial('_partial/head') %>
+<body>
+  <div id="container">
+    <div class="main clearfix">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+        <div class="container"><%- body %></div>
+    </div>
+    <div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    </div>
+  </div>
+</body>
+</html>

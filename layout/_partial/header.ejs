@@ -1,0 +1,11 @@
+<header id="header" class="header">
+  <div class="myphoto"><img src="/img/photo.jpg"></div>
+  <div class="mysitename"><%= config.title %></div>
+
+  <div class="navbar">
+        <% for (var i in theme.menu){ %>
+          <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a> | 
+        <% } %>
+   </div>
+  <div class="searchbox"><button class="search-btn"><i class="search-icon">&#xe686;</i></button><input type="text" placeholder="搜索"></div>
+</header>
